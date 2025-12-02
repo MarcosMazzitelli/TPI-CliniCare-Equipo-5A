@@ -13,7 +13,7 @@ El sistema resuelve la problemática de la administración de turnos, permitiend
 
 - Backend: ASP.NET 4.8.1 Webforms (C#)
 
-- Base de Datos: SQL Server (Procedimientos almacenados, Triggers y Relaciones complejas)
+- Base de Datos: SQL Server.
 
 - Frontend: ASP.NET Controls, HTML5, CSS3, Bootstrap.
 
@@ -23,14 +23,14 @@ El sistema resuelve la problemática de la administración de turnos, permitiend
 
 ## Arquitectura y Diseño:
 
-El proyecto fue desarrollado siguiendo una Arquitectura en Capas (N-Layer) para garantizar la escalabilidad, el mantenimiento y la separación de responsabilidades:
+El proyecto fue desarrollado siguiendo una Arquitectura en Capas para garantizar la escalabilidad, el mantenimiento y la separación de responsabilidades:
 
 
 1. Capa de Dominio: Entidades y modelos de objetos compartidos entre capas.
 
 2. Capa de Datos: Acceso a base de datos y ejecución de querys.
 
-3. Capa de Negocio: Reglas de negocio, validaciones lógicas y orquestación de datos.
+3. Capa de Negocio: Reglas de negocio, validaciones lógicas y llamados a listados de la capa de Datos.
 
 4. Capa de Presentación: Interfaces web y lógica de controles.
 
@@ -61,7 +61,7 @@ El sistema implementa una arquitectura basada en roles con las siguientes caract
 
 ### 2. Médicos
 
-- Dashboard Diario: Visualización rápida de la agenda del día con contadores de estado (Pendientes, Atendidos, Cancelados).
+- Dashboard Diario: Visualización rápida de la agenda del día con contadores de estado (Pendientes, Atendidos, Cancelados, etc.).
 
 - Gestión de Atención:
 
@@ -174,7 +174,7 @@ El sistema implementa una arquitectura basada en roles con las siguientes caract
 
 **4) Ejecución:**
 
-* Establecer el proyecto Web como proyecto de inicio (Form Login.aspx).
+* Establecer el proyecto Web como proyecto de inicio (Formulario **Login.aspx**).
 
 * Compilar y ejecutar con IIS Express.
 
