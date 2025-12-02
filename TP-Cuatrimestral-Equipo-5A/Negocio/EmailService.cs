@@ -5,6 +5,7 @@ using System.Net;
 using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 
 namespace Negocio
 {
@@ -15,7 +16,10 @@ namespace Negocio
         public EmailService()
         {
             server = new SmtpClient();
-            server.Credentials = new NetworkCredential("testingprogramacionutnfrpg@gmail.com", "dfiy uxpb vbip ibxa"); // gmail creado para el programa, clave generada para esta app
+            // ACA ESTA LA MAGIA: Leemos del Web.config
+            string usuario = ConfigurationManager.AppSettings["EmailUser"];
+            string password = ConfigurationManager.AppSettings["EmailPass"];
+            server.Credentials = new NetworkCredential(usuario, password);
             server.EnableSsl = true;
             server.Port = 587;
             server.Host = "smtp.gmail.com";
