@@ -4,25 +4,31 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <%--Seleccion de medico:--%>
-    <div class="col-md-8 mt-2 mb-2">
-        <asp:DropDownList OnSelectedIndexChanged="ddlMedicos_SelectedIndexChanged" ID="ddlMedicos"
-            runat="server" CssClass="form-select mt-2" AutoPostBack="true">
-        </asp:DropDownList>
-    </div>
+    <%-- SECCIÓN: CABECERA E INSTRUCCIONES --%>
+    <div class="container-fluid mb-4">
+        <h2 class="mb-3">Gestión de Horarios Médicos</h2>
+        <span class="text-muted">Seleccione un profesional de la lista para visualizar y editar su disponibilidad semanal.</span>
 
-    <%--Mensaje Exitoso o Error--%>
-    <div class="row">
-        <div class="col-12">
-            <%-- Label de error --%>
-            <asp:Label ID="lblMensajeError" runat="server"
-                CssClass="alert alert-danger d-block text-center" Visible="false">
-            </asp:Label>
+        <%--Seleccion de medico:--%>
+        <div class="col-md-8 mt-2 mb-2">
+            <asp:DropDownList OnSelectedIndexChanged="ddlMedicos_SelectedIndexChanged" ID="ddlMedicos"
+                runat="server" CssClass="form-select mt-2" AutoPostBack="true">
+            </asp:DropDownList>
+        </div>
 
-            <%-- Label de exito  --%>
-            <asp:Label ID="lblMensajeExito" runat="server"
-                CssClass="alert alert-success d-block text-center" Visible="false">
-            </asp:Label>
+        <%--Mensaje Exitoso o Error--%>
+        <div class="row">
+            <div class="col-12">
+                <%-- Label de error --%>
+                <asp:Label ID="lblMensajeError" runat="server"
+                    CssClass="alert alert-danger d-block text-center" Visible="false">
+                </asp:Label>
+
+                <%-- Label de exito  --%>
+                <asp:Label ID="lblMensajeExito" runat="server"
+                    CssClass="alert alert-success d-block text-center" Visible="false">
+                </asp:Label>
+            </div>
         </div>
     </div>
 
@@ -38,7 +44,8 @@
                 <div class="card-body">
                     <%--      REPEATER     --%>
                     <asp:Repeater runat="server"
-                        ID="repHorarioLunes" OnItemDataBound="repHorarioLunes_ItemDataBound"> <%--OnItemDataBound para personalizar la pagina de acuerdo al codigo (cargar ddls)--%>
+                        ID="repHorarioLunes" OnItemDataBound="repHorarioLunes_ItemDataBound">
+                        <%--OnItemDataBound para personalizar la pagina de acuerdo al codigo (cargar ddls)--%>
                         <ItemTemplate>
                             <%-- Botón de borrar --%>
                             <div class="text-end mt-1 mb-1">
