@@ -102,35 +102,34 @@ El sistema implementa una arquitectura basada en roles con las siguientes caract
 ## Capturas de Pantalla
 
 
-    Login
+### Login
 ![Login](./ImagenesDemo/Img_Login.png)
 
-    Formulario de Registro
+### Formulario de Registro
 ![Formulario Registro](./ImagenesDemo/Img_FormularioRegistro.png)
 
+### Gestión de Usuarios
+![Gestion usuarios ](./ImagenesDemo/Img_GestionUsuarios.png)
 
-    Gestión de Turnos
+### Gestión de Turnos
 ![Gestion de turnos](./ImagenesDemo/Img_NuevoTurno.png)
 ![Mis turnos - pacientes ](./ImagenesDemo/Img_MisTurnos.png)
 ![Mis turnos - pacientes ](./ImagenesDemo/Img_MisTurnosPasados.png)
 
-    Reprogramación de Turnos
-![Mis turnos - pacientes ](./ImagenesDemo/Img_ReprogramarTurno.png)
 
-
-    Panel Médico
+### Panel Médico
 ![Turnos - Medico](./ImagenesDemo/Img_GestionTurnosMedico.png)
 
-    Ver historias clínicas
+### Ver historias clínicas
 
 ![Historia clinica](./ImagenesDemo/Img_HistoriaClinica.png)
 
 
-    Gestión de Horarios
+### Gestión de Horarios
 
 ![Gestion de horarios de medicos](./ImagenesDemo/Img_HorariosMedicos.png)
 
-    Asignacion de especialidades
+### Asignacion de especialidades
 
 ![Asignacion de especialidades](./ImagenesDemo/Img_GestionEspecialidades.png)
 
