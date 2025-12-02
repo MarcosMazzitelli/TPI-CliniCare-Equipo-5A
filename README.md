@@ -7,7 +7,6 @@ Aplicación web para la gestión integral de una clínica médica, desarrollada 
 
 El sistema resuelve la problemática de la administración de turnos, permitiendo la interacción entre tres actores principales: pacientes (autogestión), médicos (evolución clínica) y recepcionistas (administración), con un módulo de administración para la configuración de la clínica.
 
-<br>
 
 ## Tecnologías utilizadas:
 
@@ -17,9 +16,10 @@ El sistema resuelve la problemática de la administración de turnos, permitiend
 
 - Frontend: ASP.NET Controls, HTML5, CSS3, Bootstrap.
 
-- Control de Versiones: Git / GitHub
+- Control de Versiones: Git / GitHub.
 
- <br>
+- Servicio de Email automatizado (SMTP) para confirmación de turnos y registro.
+
 
 ## Arquitectura y Diseño:
 
@@ -41,13 +41,11 @@ El proyecto fue desarrollado siguiendo una Arquitectura en Capas para garantizar
 
 **- Validaciones:** Doble capa de validación (Frontend y Backend) para asegurar la integridad de los datos ingresados antes de interactuar con la base de datos.
 
-<br>
 
 ## Módulos y Funcionalidad:
 
 El sistema implementa una arquitectura basada en roles con las siguientes características:
 
-<br>
 
 ### 1. Pacientes
 
@@ -57,7 +55,6 @@ El sistema implementa una arquitectura basada en roles con las siguientes caract
 
 - Perfil: Edición de datos personales y de contacto.
 
-<br>
 
 ### 2. Médicos
 
@@ -71,7 +68,6 @@ El sistema implementa una arquitectura basada en roles con las siguientes caract
 
 - Reportes: Listado histórico con filtros múltiples (DNI, Estado, Fechas).
 
-<br>
 
 ### 3. Recepcionistas
 
@@ -97,7 +93,6 @@ El sistema implementa una arquitectura basada en roles con las siguientes caract
 
   - Validaciones de Integridad: Control de solapamientos horarios, validación de hora entrada < salida, y bloqueo de eliminación de horarios si existen turnos futuros asociados.
 
-<br>
 
 ## Capturas de Pantalla
 
